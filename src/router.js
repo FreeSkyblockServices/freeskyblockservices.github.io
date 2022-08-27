@@ -1,15 +1,19 @@
-import Vue from 'vue'
-import Router from 'vue-router'
+import { createRouter, createWebHistory } from "vue-router";
+import Home from "./views/Home.vue";
 
-Vue.use(Router)
+const base = "/home";
 
-export default new Router({
-    mode: 'history',
-    base: process.env.BASE_URL,
-    routers: [
-        {
-            path: '/invite',
-            redirect: window.location.href = "https://discord.gg/xKEHBXFFQP"
-        }
-    ]
-})
+const routes = [
+    {
+        path: "/home",
+        name: "Home",
+        component: Home,
+    },
+];
+
+const router = createRouter({
+    history: createWebHistory(),
+    routes,
+});
+
+export default router;
