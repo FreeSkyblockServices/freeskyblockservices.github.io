@@ -1,5 +1,5 @@
 
 
 module.exports = {
-    publicPath: '/freeskyblockservices.github.io'
+    publicPath: '/fss-web'
 }
