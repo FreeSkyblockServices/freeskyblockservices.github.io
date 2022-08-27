@@ -1,5 +1,5 @@
 
 
 module.exports = {
-    publicPath: '/fss-web'
+    publicPath: process.env.NODE_ENV === "production" ? "/fss-web/" : "/",
 }
