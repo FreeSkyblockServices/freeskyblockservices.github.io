@@ -5,7 +5,7 @@ const base = "/home";
 
 const routes = [
     {
-        path: "/home",
+        path: "/home#",
         name: "Home",
         component: Home,
         meta: {
