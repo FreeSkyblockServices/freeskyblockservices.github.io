@@ -14,9 +14,10 @@ const routes = [
     },
 ];
 
-const router = createRouter({
+const router = createRouter({s
+    linkActiveClass: 'active',
     history: createWebHashHistory(),
-    routes,
+    routes,            
 });
 
 export default router;
