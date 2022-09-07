@@ -1,11 +1,11 @@
-import { createRouter, createWebHashHistory } from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 import Home from "./views/Home.vue";
 
 const base = "/home";
 
 const routes = [
     {
-        path: "/home#",
+        path: "/home",
         name: "Home",
         component: Home,
         meta: {
@@ -16,7 +16,7 @@ const routes = [
 
 const router = createRouter({
     linkActiveClass: 'active',
-    history: createWebHashHistory(),
+    history: createWebHistory(),
     routes,            
 });
 
